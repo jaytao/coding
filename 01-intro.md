@@ -15,7 +15,7 @@ Theres a ton of tricks and techniques that chefs (and programmers) will accumula
 ## Python
 We'll be working primarily with Python because its fairly straightforward and easy to setup and still really popular and widely used. I will try my best to note certain aspects which are Python specific versus applicable to all languages, but at the end of the day the general concepts translate to all languages.
 
-If you are working on OSX, python should be installed by default, otherwise try installing something like PyCharm. Most of the examples will be shown running from the terminal, but if you are unfamiliar with the terminal then go with PyCharm.
+If you are working on OSX, python should be installed by default, otherwise try installing something like PyCharm or using this [online python editer](https://www.programiz.com/python-programming/online-compiler/). Most of the examples will be shown running from the terminal, but if you are unfamiliar with using the terminal to navigate and save text files, then go with one of the other options.
 
 *Should get something like this on the terminal if python is installed already*
 ```
@@ -27,6 +27,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 Type `exit()` to quit.
+
+### Python 2 vs 3
+The most common version of Python used to be 2.7 (Python2), but then the maintainers of the language decided to release Python3 and stop supporting Python2. Theres slight differences, but enough that it will make your life annoying to constantly switch back and forth. Therefore, make sure you are using Python3 (any version should be fine)
+
 ## Before We Get Started
 
 ### Learning Notes
