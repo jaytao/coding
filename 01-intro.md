@@ -15,9 +15,19 @@ Theres a ton of tricks and techniques that chefs (and programmers) will accumula
 ## Python
 We'll be working primarily with Python because its fairly straightforward and easy to setup and still really popular and widely used. I will try my best to note certain aspects which are Python specific versus applicable to all languages, but at the end of the day the general concepts translate to all languages.
 
-If you are working on OSX, python should be installed by default, otherwise try installing something like PyCharm or using this [online python editer](https://www.programiz.com/python-programming/online-compiler/). Most of the examples will be shown running from the terminal, but if you are unfamiliar with using the terminal to navigate and save text files, then go with one of the other options.
+### How to Run Your Code
+Theres a few ways you can run the code you write during this tutorial. In the long term, using PyCharm or the macOS terminal is better since that more closely mimics the development environment you would use at a job, but since this is just a tutorial, I think using an online Python interpreter like [programiz](https://www.programiz.com/python-programming/online-compiler/) should be fine.
 
-*Should get something like this on the terminal if python is installed already*
+I'll detail some info about PyCharm and the Terminal below.
+
+#### Terminal
+Most of my example output will be shown from me running the scripts from my terminal as its my preferred method of developing. 
+
+**Note**:, *You need to have some experience with Unix commands as well as familiarity with a text editor. Unix is an altogether different skill set that I will not be diving too deep into. If you are completely new to it, then go with the online option or PyCharm*
+
+If you are working on macOS, Python should be installed by default.
+
+*Run this command to check. Should get something like this on the terminal if python is installed already*
 ```
 jeff-mbp:~$ python3
 
@@ -28,13 +38,16 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 Type `exit()` to quit.
 
+#### PyCharm
+PyCharm is an IDE (integrated development environment). Meaning its a program that runs on your computer that gives you a place to write Python on and takes care of some of the background setup. It comes with useful features like syntax checking and autocomplete and it has a free version.
+
 ### Python 2 vs 3
 The most common version of Python used to be 2.7 (Python2), but then the maintainers of the language decided to release Python3 and stop supporting Python2. Theres slight differences, but enough that it will make your life annoying to constantly switch back and forth. Therefore, make sure you are using Python3 (any version should be fine)
 
 ## Before We Get Started
 
 ### Learning Notes
-I will also try to add notes on how feel the best way to approach learning a topic ie: "memorize this" or "this isn't too important for now" but obviously your milage will vary. Again, just my interpretation of the best way to learn. Programming is one of those skills where there are rules, exceptions to those rules, exceptions to the exceptions, etc, etc.
+I will also try to add notes on how feel the best way to approach learning a topic ie: "memorize this" or "this isn't too important for now" but obviously your mileage will vary. Again, just my interpretation of the best way to learn. Programming is one of those skills where there are rules, exceptions to those rules, exceptions to the exceptions, etc, etc.
 
 ### Error Handling
 If you ever encounter an error thrown by Python, then read it and if you don't understand it, Google it. Thats how 100% of programmers deal with their errors. Its a normal part of coding and understanding what errors are trying to tell you is an important learned skill. That being said, I'll try to showcase common errors that occur as we go along.
