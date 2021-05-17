@@ -17,46 +17,74 @@ Well if you kind of recall this then congrats! You already understand variables 
 
 The concept is similar in programming though. You are using "variables" to store values which are masked at the time of writing but then get evaluated later on when the program runs.
 
-The equivalent in python would be:
-
-**Note**: *the arithmetic operators `*` and `+` will be discussed later. But just know they do multiplication and addition how you would expect them to*
+Lets try to run the equivalent in python:
 ```
 # variable1.py
 x = 5
 y = 2 * x + 3
 print(y)
 ```
-Run it and it should print out `13`
+**Note:** *the arithmetic operators `*` and `+` will be discussed later. But just know they do multiplication and addition, respectively*
 
-So as we can see, using `=` assigns the right side to the variable on the left side. Which is why the program "remembered" that `x` is 5 and why the `print(y)` statement "remembers" what the value of `y` was.
+Run it and it should print out `13` back to you
+
+You can think of the conversation between the program and Python as follows:
+```
+Program: Hello Python. Here are the steps I want you to complete.
+         I want you to save the value 5 in the variable x
+Python: Okay, variable x now has the value 5
+Program: I want you to multiply 2 and x together,
+         then add 3, then save it to variable y
+Python: Okay since I know x is 5, 2 * x would be 2 * 5 which is 10.
+        Then I add 3 to 10 and get 13.
+        Then I store 13 in the variable y.
+        y now has the value 13
+Program: I want you to print the value in y
+Python: Okay, since I know y has the value 13, I will print 13
+Program: Your job is done. Thanks.
+```
+So as we can see, using `=` assigns a value to the variable on the left side. This is why the program "remembered" that `x` is 5 and why the `print(y)` statement "remembers" that y was 13.
  
-If you try to define y before x, you will get an error when you run it
+If we flip the lines where we define  `y` and `x` though, we will get an error when you run it.
+
+Clear our what we had before and try to run this instead:
 ```
 # variable1-error.py
 y = 2 * x + 3
 x = 5
 print(y)
 ```
+You should get an output like
 ```
-jeff-mbp:~$ python3 variable1-error.py
 Traceback (most recent call last):
   File "variable1-error.py", line 1, in <module>
     y = 2 * x + 3
 NameError: name 'x' is not defined
 ```
-*This is because Python needs to know what `x` is if you're gonna use it but we had not defined it yet. So it freaked out since it doesn't know how to evaluate `y` without already knowing `x`* 
+Lets try to explore why this happened
 
+**Note:** *The correct jargon is that a `NameError` was "thrown" by the program. In the world of programming, errors are thrown. Just remember that*
+
+## NameError: name 'x' is not defined
+Lets redo the conversation, but using the `variable1-error.py` program instead
+```
+Program: Hello Python. Here are the steps I want you to complete.
+         I want you to multiply 2 and x together,
+         then add 3, then save it to variable y
+Python: Okay sure, let me retrieve the value of x...
+        Wait, I don't know what x is !!
+        Abort abort!!!
+        x is not defined
+        I can't proceed
+```
+
+As you can see, if you try to use `x` without first defining it, it will cause this `NameError` since Python is attempting to lookup the variable with name `x`, but it was never defined so it does not know what value it needs to use.
+
+## Other Arithmetic Operators
 The other common arithmetic operators are `-` for subtraction, `/` for division.
 
- `%` is the modulo operator which is fancy for "remainder". So `10 % 3` would be `1` since thats the remainder when you do `10 / 3`. **It shows up pretty often in programming so its definitely worth remembering this one**.
- 
-## Experimentation
-
-**Things to try (not necessary but might be helpful)**
- 1. Try to use all the operators and see if Python respects order of operations (PEMDAS). Hint: Parenthesis do work how you expect it to.
- 2. What happens when you do `x = y = 5`? Dont actually do this when you're writing a program for real but its interesting.
- 3. What happens when you try to assign a value to a number like: `5 = x`?
- 4. What happens when you assign `x = y` but then change the value of `y`? Does `x` change?
+ `%` is the modulo operator which is fancy for "remainder". So `10 % 3` would be `1` since thats the remainder when you do `10 / 3`. 
+ **% shows up pretty often in programming so its definitely worth remembering this one**.
 
 ## But....why?
 
@@ -148,3 +176,11 @@ And then when we transition to using 100, we can just replace `x = 42` with `x =
 This way we save ourselves some work every time we want to do these operations for a different number, and cut down on the chance we accidentally miss a place.
 
 If you ever find yourself reusing the same number, word, etc etc a lot, its definitely worth defining them in a variable in case you ever need to change it.
+
+## Experimentation
+
+**Things to try (not necessary but might be helpful)**
+ 1. Try to use all the operators and see if Python respects order of operations (PEMDAS). Hint: Parenthesis do work how you expect it to.
+ 2. What happens when you do `x = y = 5`? Dont actually do this when you're writing a program for real but its interesting.
+ 3. What happens when you try to assign a value to a number like: `5 = x`?
+ 4. What happens when you assign `x = y` but then change the value of `y`? Does `x` change?
