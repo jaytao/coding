@@ -3,7 +3,7 @@ This is my take on the most streamlined way to learn the fundamentals of coding.
 
 I try to make the sections as interactive as possible because at the end of the day, there is no substitute for repetition and trying things out yourself. **Its very important to experiment** and go off the rails when you learn programming. 
 
-## Shitty cooking analogy
+## Why Programming Is Like Cooking Analogy
 Programming is less like baking, in which you measure out the exact amount of ingredients and bake at a specific time and temp to arrive at the perfect result, and more like cooking, where you have a general idea of what you're trying to make and how you get there is up to your personal skill, preference, and limitations. 
 
 Maybe you've never diced an onion before, or you do not have a dutch oven, or are missing half the spices the recipe calls for. But you still gotta eat so you're just gonna move forward with making that dish anyways. Its not going to be perfect, but thats okay because next time you'll know what worked and didn't work and you'll be slightly better at adapting and have a better understanding of why certain rules and guidelines exist.
